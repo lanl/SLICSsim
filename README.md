@@ -2,7 +2,7 @@
 
 O# (O5126)
 
-The program SLICSsim simulates the detector's response of the Short-Lived Isotope Counting (SLICS) system described in (https://doi.org/10.1063/5.0316817). The code is solely based on the GEANT4 software (https://geant4.web.cern.ch/) and utilizes the auxiliary library SSLG4 (https://github.com/mkandemirr/SSLG4).
+The program SLICSsim simulates the detector's response of the Short-Lived Isotope Counting (SLICS) system described in (https://doi.org/10.1063/5.0316817). The code is solely based on the GEANT4 software (https://geant4.web.cern.ch/) and utilizes the auxiliary library SSLG4 (https://github.com/mkandemirr/SSLG4). All the necessary files that are needed to successfully compile and run the simulation, including files from the SSLG4 library, are included in this repository.
 
 
 © 2026. Triad National Security, LLC. All rights reserved.
