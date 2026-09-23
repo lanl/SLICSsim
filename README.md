@@ -24,9 +24,13 @@ P. Gastis
 1. Dowload all files and directories provided in SLICSsim to your local directory
 2. Unzip "sslg4", "OPTSim", and "parts" files
 3. Build the simulation project using cmake:
+   
     cd path\to\your\local\SLICSsim directory
+   
     cmake .
+   
 5. Compile the code:
+   
     make
    
 
