@@ -1,0 +1,42 @@
+#####
+# This file controls the conditions of the setup for calculating
+# the SLICS detector efficiency.
+#
+# For running the simulation using the geometry of the prototype SLICS
+# set "UseTIM_SLICS" to "false".
+#####
+
+/geometry/UseTIM_SLICS false
+
+#####
+# To visualize the chosen detector geometry using the interactive mode
+# make sure the "UseTIM_SLICS" parameter in init_vis.mac is the same as in here.
+#####
+
+/run/initialize
+/process/had/rdm/thresholdForVeryLongDecayTime 1.0e+60 year
+
+/gps/particle ion
+/gps/energy 0. eV
+/gps/pos/type Volume
+/gps/pos/shape Cylinder
+
+
+## OPTION 1:  point source
+#/gps/ion 83 207                 ## example: 207Bi
+#/gps/pos/halfz 0.001 mm         ## half-thickness
+#/gps/pos/radius 1.5 mm          ## radius
+#/gps/pos/centre 0 0 -10 mm      ## gap between source and crystal
+
+
+
+## OPTION 2: extended target sample
+/geometry/UseExtendedSample true
+/gps/ion 2 6                    ## example: 6He
+/gps/pos/radius 12.5 mm         ## radius
+/gps/pos/halfz 0.5 mm           ## half-thickness
+/gps/pos/centre 0 0 -0.5 mm     ## gap between sample (middle point) and crystal. Must be equal to halfz if sample is in contact with the crystal
+
+
+/gps/ang/type iso
+/run/beamOn 1000
